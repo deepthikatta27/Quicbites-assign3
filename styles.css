@@ -3,7 +3,7 @@ body {
     padding: 1vw;
     margin: 0;
     position: relative;
-    font-family: 'Poppins';
+    font-family: Poppins;
     color: rgb(30, 39, 85);
     border: 2px solid rgb(30, 39, 85);
     border-radius: 20px;
@@ -28,7 +28,7 @@ nav {
     gap: 1vw;
 }
 
-.signin, .signup {
+.signin {
     background-color: rgb(237, 240, 235);
     border-radius: 12px;
     border: 1px solid rgb(30, 39, 85);
@@ -39,6 +39,9 @@ nav {
 
 .signup {
     background-color: rgb(30, 39, 85);
+    border-radius: 12px;
+    border: 1px solid rgb(30, 39, 85);
+    padding: 0vw 3vw;
     color: white;
 }
 
@@ -85,10 +88,9 @@ section span {
 
 input[type="text"] {
     width: 27vw;
-    height: 2.7vw;
-    padding: 0.7vw 2vw;
+    height: 2vw;
+    padding: 0.5vw 2vw;
     border-radius: 1vw;
-    padding: 0.5vw;
     border: none;
 }
 
@@ -248,10 +250,13 @@ footer {
         border-right: none;
         border-bottom: 2px solid black;
     }
-    input[type="text"]::placeholder{
-        font-size: 10px;
-        padding:10px;
+    input[type="text"] {
+        height: 4vw;
     }
+    input[type="text"]::placeholder{
+        font-size: 2vw;
+    }
+    
     .steps img {
         height: 30vw;
         width: 30vw;
@@ -311,12 +316,6 @@ footer {
         text-align: left;
         white-space: pre-line;
         padding-left: 6vw;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .nav-left b {
-        font-size: 20px;
     }
 }
 
